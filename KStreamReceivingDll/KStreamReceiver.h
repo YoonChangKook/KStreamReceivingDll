@@ -45,7 +45,7 @@ private:
 	void ReceiveStream();
 
 	// event occur when receive image successfully
-	void(*receiveEvent)(__in cv::Mat cv_img);
+	void(*receiveEvent)(__in cv::Mat& cv_img);
 
 public:
 	void SetFFMPEG(std::string ip = "127.0.0.1", int port = 8554);
@@ -55,7 +55,7 @@ public:
 	/*
 	set event to get image when stream receiver succesfully receive.
 	*/
-	void SetReceiveEvent(void(*receiveEvent)(__in cv::Mat cv_img));
+	void SetReceiveEvent(void(*receiveEvent)(__in cv::Mat& cv_img));
 };
 
 #endif

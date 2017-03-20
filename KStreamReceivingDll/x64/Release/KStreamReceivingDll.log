@@ -1,4 +1,4 @@
-﻿빌드 시작: 2017-03-10 오후 5:03:07
+﻿빌드 시작: 2017-03-13 오후 3:53:32
      1>2 노드의 "D:\Yoon\Robot\VideoStream\KStreamReceivingDll\KStreamReceivingDll\KStreamReceivingDll.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\Yoon\Robot\VideoStream\ffmpeg\include /IC:\OpenCV2.4.13\build\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D KSTREAMRECEIVINGDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt KStreamReceiver.cpp
@@ -18,4 +18,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:01.09
+경과 시간: 00:00:01.13

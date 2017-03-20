@@ -59,7 +59,7 @@ int KStreamReceiver::GetLastError()
 		return this->last_error;
 }
 
-void KStreamReceiver::SetReceiveEvent(void(*receiveEvent)(__in cv::Mat cv_img))
+void KStreamReceiver::SetReceiveEvent(void(*receiveEvent)(__in cv::Mat& cv_img))
 {
 	this->receiveEvent = receiveEvent;
 }
@@ -93,8 +93,6 @@ void KStreamReceiver::ReceiveStream()
 		if (this->receiveEvent)
 		{
 			frame_pool[frame_pool_index] = cv_img.clone();
-			std::cout << frame_pool[frame_pool_index].rows << ", "
-				<< frame_pool[frame_pool_index].cols << std::endl;
 			this->receiveEvent(frame_pool[frame_pool_index]);
 			frame_pool_index = (frame_pool_index + 1) % STREAM_FPS;
 		}

@@ -3,6 +3,7 @@
 
 #ifdef KSTREAMRECEIVINGDLL_EXPORTS
 #define MY_FFMPEG_API __declspec(dllexport)
+#define MY_FFMPEG
 #else
 #define MY_FFMPEG_API __declspec(dllimport)
 #endif
