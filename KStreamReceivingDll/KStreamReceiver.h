@@ -9,6 +9,7 @@
 
 #include <mutex>
 #include <thread>
+#include <ctime>
 
 #include <opencv2/core/core.hpp> // Basic OpenCV structures (cv::Mat)
 #include <opencv2/highgui/highgui.hpp>

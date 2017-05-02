@@ -89,6 +89,16 @@ void KStreamReceiver::ReceiveStream()
 			continue;
 		}
 
+		// time stamp
+		std::time_t rawtime;
+		struct std::tm* timeinfo;
+		char timebuf[80];
+		std::time(&rawtime);
+		timeinfo = std::localtime(&rawtime);
+		std::strftime(timebuf, sizeof(timebuf), "%d-%m-%Y %I:%M:%S", timeinfo);
+		std::string timestr(timebuf);
+		cv::putText(cv_img, timestr, cv::Point(20, 50), cv::FONT_HERSHEY_SIMPLEX, 0.75, cv::Scalar::all(255), 2);
+
 		// event occur
 		if (this->receiveEvent)
 		{
