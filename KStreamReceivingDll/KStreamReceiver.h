@@ -7,6 +7,7 @@
 #define K_STREAM_RECEIVING_API __declspec(dllimport)
 #endif
 
+#include <Windows.h>
 #include <mutex>
 #include <thread>
 #include <ctime>

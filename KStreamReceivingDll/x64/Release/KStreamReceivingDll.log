@@ -1,12 +1,19 @@
-﻿빌드 시작: 2017-05-02 오후 3:25:12
-     1>2 노드의 "D:\Yoon\Robot\VideoStream\KStreamReceivingDll\KStreamReceivingDll\KStreamReceivingDll.vcxproj" 프로젝트(Build 대상)입니다.
+﻿빌드 시작: 2017-05-10 오후 11:02:33
+     1>2 노드의 "D:\Yoon\Robot\VideoStream\KStreamReceivingDll\KStreamReceivingDll\KStreamReceivingDll.vcxproj" 프로젝트(Rebuild 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\Yoon\Robot\VideoStream\ffmpeg\include /IC:\OpenCV2.4.13\build\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D KSTREAMRECEIVINGDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt KStreamReceiver.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\Yoon\Robot\VideoStream\ffmpeg\include /IC:\OpenCV2.4.13\build\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D KSTREAMRECEIVINGDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt KStreamReceiver.cpp MyFFMPEGReceiver.cpp
          KStreamReceiver.cpp
      1>d:\yoon\robot\videostream\ffmpeg\include\libavutil\rational.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
      1>d:\yoon\robot\videostream\kstreamreceivingdll\kstreamreceivingdll\MyFFMPEGReceiver.h(59): warning C4251: 'MyFFMPEGReceiver::ip' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'에서는 class 'MyFFMPEGReceiver'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
-     1>d:\yoon\robot\videostream\kstreamreceivingdll\kstreamreceivingdll\KStreamReceiver.h(41): warning C4251: 'KStreamReceiver::mtx_lock' : class 'std::mutex'에서는 class 'KStreamReceiver'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+     1>d:\yoon\robot\videostream\kstreamreceivingdll\kstreamreceivingdll\KStreamReceiver.h(42): warning C4251: 'KStreamReceiver::mtx_lock' : class 'std::mutex'에서는 class 'KStreamReceiver'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\mutex(105) : 'std::mutex' 선언을 참조하십시오.
+     1>KStreamReceiver.cpp(93): warning C4101: 'rawtime' :참조되지 않은 지역 변수입니다.
+     1>KStreamReceiver.cpp(94): warning C4101: 'timeinfo' :참조되지 않은 지역 변수입니다.
+         MyFFMPEGReceiver.cpp
+     1>d:\yoon\robot\videostream\ffmpeg\include\libavutil\rational.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>d:\yoon\robot\videostream\kstreamreceivingdll\kstreamreceivingdll\MyFFMPEGReceiver.h(59): warning C4251: 'MyFFMPEGReceiver::ip' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'에서는 class 'MyFFMPEGReceiver'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+     1>MyFFMPEGReceiver.cpp(45): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>MyFFMPEGReceiver.cpp(17): warning C4101: 'ret' :참조되지 않은 지역 변수입니다.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Yoon\Robot\VideoStream\KStreamReceivingDll\x64\Release\KStreamReceivingDll.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:\Yoon\Robot\VideoStream\ffmpeg\lib /LIBPATH:C:\OpenCV2.4.13\build\x64\vc12\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Yoon\Robot\VideoStream\KStreamReceivingDll\x64\Release\KStreamReceivingDll.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Yoon\Robot\VideoStream\KStreamReceivingDll\x64\Release\KStreamReceivingDll.lib" /MACHINE:X64 /DLL x64\Release\KStreamReceiver.obj
          x64\Release\MyFFMPEGReceiver.obj
@@ -14,8 +21,8 @@
          코드를 생성하고 있습니다.
          코드를 생성했습니다.
          KStreamReceivingDll.vcxproj -> D:\Yoon\Robot\VideoStream\KStreamReceivingDll\x64\Release\KStreamReceivingDll.dll
-     1>"D:\Yoon\Robot\VideoStream\KStreamReceivingDll\KStreamReceivingDll\KStreamReceivingDll.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+     1>"D:\Yoon\Robot\VideoStream\KStreamReceivingDll\KStreamReceivingDll\KStreamReceivingDll.vcxproj" 프로젝트를 빌드했습니다(Rebuild 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:01.39
+경과 시간: 00:00:02.99
